@@ -48,7 +48,6 @@ import UIKit
     @IBInspectable public var contentViewShadowOffset: CGSize = CGSize.zero
     @IBInspectable public var contentViewShadowOpacity: Float = 0.4
     @IBInspectable public var contentViewShadowRadius: CGFloat = 8.0
-    @IBInspectable public var contentViewCornerRadius: CGFloat = 8.0
     @IBInspectable public var contentViewFadeOutAlpha: CGFloat = 1.0
     @IBInspectable public var contentViewScaleValue: CGFloat = 0.7
     @IBInspectable public var contentViewInLandscapeOffsetCenterX: CGFloat = 30.0
@@ -468,8 +467,6 @@ import UIKit
             layer.shadowOffset = self.contentViewShadowOffset
             layer.shadowOpacity = self.contentViewShadowOpacity
             layer.shadowRadius = self.contentViewShadowRadius
-            layer.cornerRadius = self.contentViewCornerRadius
-            layer.masksToBounds = true
             if let color = self.contentViewShadowColor?.cgColor {
                 layer.shadowColor = color
             }
